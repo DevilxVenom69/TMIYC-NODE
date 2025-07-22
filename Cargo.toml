@@ -1,0 +1,26 @@
+[dependencies]
+actix-web = "4.8.0"
+actix-cors = "0.7.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_json_canonicalizer = "0.3.0"
+sha2 = "0.10"
+hex = "0.4"
+base64 = "0.22"
+dotenv = "0.15"
+env_logger = "0.11"
+log = "0.4"
+rand = "0.8.5"
+tokio = { version = "1", features = ["full"] }
+
+# API Security
+actix-governor = { version = "0.6.0", features = ["actix_web"] }
+
+# Bellman ZKP Dependencies
+bellman = "0.14.0"
+pairing = "0.23.0"
+ff = "0.13.0"
+bls12_381 = "0.8.0"
+
+# Post-Quantum Crypto
+oqs = "0.9.1"
